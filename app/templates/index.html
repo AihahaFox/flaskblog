@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% import "_macros.html"  as macros%}
+{% block post %}
+<div class="post-tabs">
+    {% include '_post.html' %}
+</div>
+<nav style="text-align: center">
+	<div class="pagination">
+		{{ macros.pagination_widget(pagination, '.index') }}
+	</div>
+</nav>
+{% endblock %}

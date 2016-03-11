@@ -1,0 +1,83 @@
+.top {
+	background-image: url(./images/bp.jpg);
+	background-repeat:no-repeat;
+	background-position:top;
+	height: 387px;
+}
+.top img {
+	margin-top: 30px;
+}
+.banner {
+	
+}
+#nav-left {
+	margin-left: 200px;
+	margin-top: 10px;
+}
+#nav-content a {
+	color: black;
+	font-size: 18px;
+}
+#nav-content a i {
+	margin-right: 10px;
+}
+#nav-right a {
+	color: black;
+	font-size: 18px;
+}
+#nav-right a i {
+	margin-right: 10px;
+}
+.page {
+	background-color: rgb(245,245,245)
+}
+.container {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+.content {
+	margin-left: 10%;
+	margin-right: 10%;
+	height: auto;
+	
+}
+.post-page {
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 20px;
+	background-color: white;
+	box-shadow: 1px 1px 5px black;
+}
+.post-title {
+	height: 50px;	
+	padding: 10px 10px 20px 10px;
+	text-align: center;
+}
+.post-content {
+	height: auto;
+	padding: 10px 10px 10px 10px;
+	margin-left: 50px;
+	margin-right: 50px; 
+	word-break: break-word;
+}
+.post-foot {
+	padding: 10px 10px 20px 10px;
+}
+.post-foot a{
+	font-size: 14px;
+	color: black;
+}
+.post-foot a i{
+	margin-right: 5px;
+}
+.tag{
+	text-align: right;
+}
+.foot {
+	padding-top: 20px;
+	width: auto;
+	height: 100px;
+	background-color: black;
+	text-align: center;
+	
+}

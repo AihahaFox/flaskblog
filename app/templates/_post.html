@@ -1,0 +1,32 @@
+{% for post in posts %}
+<div class="post-page" id="post-{{ post.id }}">
+	<div class="post-title">
+		<a href="{{ url_for('.post', id=post.id) }}">
+			<h2>{{ post.title }}</h2>
+		</a>						
+	</div>
+	<hr style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="90%" color=#987cb9 SIZE=3>
+	<article class="post-content">
+		{% if post.content_html %}
+			{{ post.content_html |safe }}
+		{% else %}
+			{{ post.content }}
+		{% endif %}
+	</article>
+	<hr style="FILTER: alpha(opacity=100,finishopacity=0,style=3)" width="90%" color=#987cb9 SIZE=3>
+	<div class="post-foot">
+		<div class="container-fluid">
+		  	<div class="row">
+			  	<div class="col-md-8">
+				  	<div class="row">
+				   	 	<div class="col-md-4"><a href=""><i class="fa fa-clock-o"></i>{{ post.timestamp }}</a></div>
+				   	 	<div class="col-md-4"><a href=""><i class="fa fa-comment"></i>Comments</a></div>
+				   	 	<div class="col-md-4"><a href=""><i class="fa fa-folder"></i>博客</a></div>	
+				   	</div>
+			  	</div>
+			   	<div class="col-md-4 tag"><a href=""><i class="fa fa-tag"></i>nihao,ve</a></div>
+		  	</div>
+		</div>
+	</div>
+</div>
+{% endfor %}
